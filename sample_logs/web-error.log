@@ -1,0 +1,7 @@
+[2025-08-02T11:54:22.561Z] ERROR /api/payroll/export failed for user john.doe@company.com (employee EMP1147) on host 10.14.22.91
+TRACEID=api-key=sk-test-1234567890abcdef path=/srv/prod/payroll/export.js line=187
+Request: GET https://payroll.internal.local/export?userId=EMP1147&mode=full
+Stack: Error: Missing S3 permissions
+    at Object.handler (C:\apps\payroll\handlers\export.js:187:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
